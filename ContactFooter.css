@@ -1,0 +1,36 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.contact-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #00ffc8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #888;
+}

@@ -1,0 +1,116 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  margin: 2rem;
+  gap: 2rem;
+
+  background: linear-gradient(270deg, #0f172a, #1e293b, #0f172a);
+  background-size: 600% 600%;
+  animation: animatedGradient 18s ease infinite;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 2rem;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #f8fafc;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideDown 1s ease;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #cbd5e1;
+  margin: 1rem 0;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+.hero-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  background: #818cf8;
+  box-shadow: 0 10px 30px rgba(129, 140, 248, 0.5);
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  border-radius: 2rem;
+  animation: slideInRight 1.2s ease;
+}
+
+/* Animations */
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+}

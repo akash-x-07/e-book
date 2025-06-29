@@ -1,0 +1,38 @@
+.cta-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #00ffc8, #2dffb3);
+  text-align: center;
+  color: #000;
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: #000;
+  color: #00ffc8;
+  padding: 15px 35px;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #222;
+  transform: scale(1.05);
+}
